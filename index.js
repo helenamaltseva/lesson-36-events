@@ -13,13 +13,11 @@ function sortTable(columnIndex) {
         y = rows[i + 1].getElementsByTagName("td")[columnIndex];
 
         if (columnIndex === 2) {
-          // Сортування числових значень як числа
           if (Number(x.innerHTML) > Number(y.innerHTML)) {
             shouldSwitch = true;
             break;
           }
         } else {
-          // Сортування рядкових значень
           if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
             shouldSwitch = true;
             break;
